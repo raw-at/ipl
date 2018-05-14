@@ -29,12 +29,10 @@ class Home extends Component {
         return (<div className={classes.Home}>
         <div className="container-fluid">
                 <div className="row">
-                    {/*<div className="col-sm-2 col-xs-12">
-                        <Sidebar />
-                    </div>*/
-                    }
                      <Topbar />
+                </div>
                     
+                <div className="row">
                     {this.props.data?
                     <div className="col-sm-12 col-xs-12">
                         <div className="row">

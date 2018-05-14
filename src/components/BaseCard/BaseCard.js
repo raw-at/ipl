@@ -14,6 +14,7 @@ class BaseCard extends Component  {
         matchDate:"18-Apr-08/RCB",
         get_clicked:false,
         disabled:true,
+        test:true
     } 
     selectHandler =(event)=> {
         this.setState({selectTeamForPlayer:event.target.value,team_select:false});
@@ -192,10 +193,10 @@ class BaseCard extends Component  {
         }
 
         else if (this.props.card_type == 'date_wise_detail'){
-            card = (<div style={{"color":"white"}}>
-                        <h3 style={{"textAlign":"center","color":"black"}}><b>Date: <br />{this.props.match_date}</b></h3>
+            card = (<div style={{"color":"white","padding":"4%"}} >
+                        <h3 style={{"color":"black"}}><b>Date: {this.props.match_date}</b></h3>
                         <h4 style={{"textAlign":"center"}}><b>{this.props.teamA + ' vs ' + this.props.teamB}</b></h4>
-                        <h4 style={{"textAlign":"center"}}><b><span style={{"color":"black"}}>Venue</span> <br />{this.props.venue}</b></h4>
+                        <p><b><span style={{"color":"black"}}>Venue: </span>{this.props.venue}</b></p>
                     </div>)
         }
 

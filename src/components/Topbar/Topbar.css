@@ -1,6 +1,6 @@
 .Topbar{
     height: 50px;
-    
+    z-index: 100;
 }
 a {
     color: whitesmoke;
