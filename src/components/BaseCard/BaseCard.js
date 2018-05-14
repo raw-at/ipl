@@ -133,7 +133,11 @@ class BaseCard extends Component  {
                                 <button className="btn btn-success" onClick={this.backButton}><i class="fa fa-arrow-left"></i>Back</button>
                                 
                             </div>
-                            :null}
+                            :<div>
+                                    <h1>Fetching Player Info...</h1>
+                                    <div className="loader">Loading...</div>
+
+                            </div>}
                     </div>
                 )
             }
